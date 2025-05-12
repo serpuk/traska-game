@@ -1,5 +1,6 @@
 // Traska - Space Race (React + full feature set)
 import React, { useState, useEffect } from 'react';
+
 const Button = ({ onClick, onDoubleClick, children }) => (
   <button
     onClick={onClick}
@@ -9,7 +10,6 @@ const Button = ({ onClick, onDoubleClick, children }) => (
     {children}
   </button>
 );
-
 
 const GRID_SIZE = 10;
 const INITIAL_ENERGY = 5;
