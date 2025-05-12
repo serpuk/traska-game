@@ -1,6 +1,15 @@
 // Traska - Space Race (React + full feature set)
 import React, { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
+const Button = ({ onClick, onDoubleClick, children }) => (
+  <button
+    onClick={onClick}
+    onDoubleClick={onDoubleClick}
+    className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
+  >
+    {children}
+  </button>
+);
+
 
 const GRID_SIZE = 10;
 const INITIAL_ENERGY = 5;
